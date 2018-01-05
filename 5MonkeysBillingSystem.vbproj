@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{473CB559-C71F-42AA-8997-6F1EE3985921}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>5MonkeysBillingSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>5MonkeysBillingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>5MonkeysBillingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="billing_systemDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>billing_systemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="billing_systemDataSet.vb">
+      <DependentUpon>billing_systemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bill\AddItem.Designer.vb">
+      <DependentUpon>AddItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bill\AddItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bill\Bill.Designer.vb">
+      <DependentUpon>Bill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bill\Bill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bill\Calculate.Designer.vb">
+      <DependentUpon>Calculate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bill\Calculate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bill\SelectTable.Designer.vb">
+      <DependentUpon>SelectTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bill\SelectTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Food Items\AddCategory.Designer.vb">
+      <DependentUpon>AddCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Food Items\AddCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Food Items\AddFoodItem.Designer.vb">
+      <DependentUpon>AddFoodItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Food Items\AddFoodItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Password\ChangePassword.Designer.vb">
+      <DependentUpon>ChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Password\ChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Food Items\EditSelectedItem.Designer.vb">
+      <DependentUpon>EditSelectedItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Food Items\EditSelectedItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Password\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Password\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Food Items\ModifyFoodItems.Designer.vb">
+      <DependentUpon>ModifyFoodItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Food Items\ModifyFoodItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Food Items\ViewFoodItems.Designer.vb">
+      <DependentUpon>ViewFoodItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Food Items\ViewFoodItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\DailySalesReport.Designer.vb">
+      <DependentUpon>DailySalesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\DailySalesReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\FoodMenu.Designer.vb">
+      <DependentUpon>FoodMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\FoodMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\MonthlySalesReport.Designer.vb">
+      <DependentUpon>MonthlySalesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\MonthlySalesReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Receipt.Designer.vb">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Receipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Validator.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Bill\AddItem.resx">
+      <DependentUpon>AddItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bill\Bill.resx">
+      <DependentUpon>Bill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bill\Calculate.resx">
+      <DependentUpon>Calculate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bill\SelectTable.resx">
+      <DependentUpon>SelectTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Food Items\AddCategory.resx">
+      <DependentUpon>AddCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Food Items\AddFoodItem.resx">
+      <DependentUpon>AddFoodItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Password\ChangePassword.resx">
+      <DependentUpon>ChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Food Items\EditSelectedItem.resx">
+      <DependentUpon>EditSelectedItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Password\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Food Items\ModifyFoodItems.resx">
+      <DependentUpon>ModifyFoodItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Food Items\ViewFoodItems.resx">
+      <DependentUpon>ViewFoodItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\DailySalesReport.resx">
+      <DependentUpon>DailySalesReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FoodMenu.rdlc" />
+    <EmbeddedResource Include="Forms\Reports\FoodMenu.resx">
+      <DependentUpon>FoodMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MonthlySalesReport.rdlc" />
+    <EmbeddedResource Include="Forms\Reports\MonthlySalesReport.resx">
+      <DependentUpon>MonthlySalesReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DailySalesReport.rdlc" />
+    <EmbeddedResource Include="Reports\Receipt.rdlc" />
+    <EmbeddedResource Include="Forms\Reports\Receipt.resx">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="billing_systemDataSet.xsc">
+      <DependentUpon>billing_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="billing_systemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>billing_systemDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="billing_systemDataSet.xss">
+      <DependentUpon>billing_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="billing_system.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
